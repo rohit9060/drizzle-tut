@@ -1,6 +1,6 @@
 {
-  "id": "4b51a06b-c64e-4488-8ee3-164e49f00e40",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "9733b799-b1c7-4373-b936-bd6cfb5a25dd",
+  "prevId": "4841522b-def5-4e32-8f27-bcf7f6d7b3e4",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -60,12 +60,30 @@
           "primaryKey": false,
           "notNull": true
         },
+        "password": {
+          "name": "password",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
         "is_verified": {
           "name": "is_verified",
           "type": "boolean",
           "primaryKey": false,
           "notNull": false,
           "default": false
+        },
+        "token": {
+          "name": "token",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "otp": {
+          "name": "otp",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},
